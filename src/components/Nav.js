@@ -8,8 +8,8 @@ import {
   AiOutlineVideoCamera,
   AiOutlinePaperClip
 } from "react-icons/ai";
-// import "./Nav.css";
-// import "./Game.css";
+import "./Nav.css";
+import "./Game.css";
 import { Link } from "react-router-dom";
 
 const Nav = props => {

@@ -1,0 +1,114 @@
+.projects__button {
+    color: #FFF;
+    background-color: #EB6D4A;
+    transition: border 0.2s ease-out;
+    transition: padding 0.2s ease-out;
+    padding: .5em;
+    border-radius: 5px;
+    border: none;
+    font-size: .7em;
+    width: 80%;
+    margin: 0 3vh 0 3vh;
+    border: .5vh solid #383756;
+    cursor: pointer
+}
+
+.projects__button:hover {
+    font-size: .7em;
+    padding: .8em;
+    border: .5vh solid #FFF;
+    cursor: pointer
+
+}
+
+.resume__button {
+    color: #FFF;
+    background-color: #EB6D4A;
+    transition: border 0.2s ease-out;
+    transition: padding 0.2s ease-out;
+    padding: .5em;
+    border-radius: 5px;
+    border: none;
+    font-size: .7em;
+    /* width: 80%; */
+    margin: 3vh 3vh 0 3vh;
+    border: .5vh solid #383756;
+    cursor: pointer
+}
+
+.resume__button:hover {
+    font-size: .7em;
+    padding: .8em;
+    border: .5vh solid #FFF;
+    cursor: pointer
+}
+
+.projects__button--true {
+    color: #FFF;
+    background-color: #EB6D4A;
+    padding: .8em;
+    border-radius: 5px;
+    border: none;
+    font-size: .7em;
+    margin: 0 1vh 0 1vh;
+    border: .5vh solid #FFF;
+    width: 80%;
+    cursor: pointer
+}
+
+.resume__button--true {
+    color: #FFF;
+    background-color: #EB6D4A;
+    padding: .8em;
+    border-radius: 5px;
+    border: none;
+    font-size: .7em;
+    margin: 3vh 1vh 0 1vh;
+    border: .5vh solid #FFF;
+    /* width: 80%; */
+    cursor: pointer
+}
+
+.projects--btns {
+    width: -webkit-fill-available;
+}
+
+.projects--story {
+    background-color: #383756;
+    width: 200%; 
+    font-size: .8em;
+    text-align: left;
+    padding: .5vh;
+    transition: background-color 0.5s ease-in;
+    overflow: scroll;
+}
+
+
+.projects--image {
+    width: 100%;
+}
+
+.projects--img {
+    width: 30vh;
+}
+
+.job-title {
+    color: #EB6D4A;
+    font-size: 2em;
+}
+
+.job-p {
+    padding: .5vh;
+}
+
+.project-links {
+    /* text-decoration: none; */
+    color: #EB6D4A;
+}
+
+.project-links-section {
+    display: flex; 
+    justify-content: space-around;
+    padding: 5vh;
+    font-size: 2em;
+}

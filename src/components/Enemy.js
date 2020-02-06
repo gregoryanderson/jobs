@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import './Game.css'
+import './Game.css'
 
 
 class Enemy extends Component {

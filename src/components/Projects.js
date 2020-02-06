@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import "./Projects.css";
+import "./Projects.css";
 
 const Projects = props => {
   const [agency, setAgency] = useState(false);

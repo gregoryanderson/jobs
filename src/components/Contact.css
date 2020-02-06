@@ -1,0 +1,18 @@
+.contact--buttons {
+    height: 10vh;
+    display:flex;
+}
+.contact--text {
+    padding: 3vh;
+    height: 46vh;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info {
+    display: flex; 
+    justify-content: space-around;
+    padding: 5vh;
+    font-size: 2em;
+    color: #EB6D4A;
+}

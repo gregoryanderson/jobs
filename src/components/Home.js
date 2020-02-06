@@ -1,5 +1,5 @@
 import React from "react";
-// import "./Main.css";
+import "./Main.css";
 import { FaLinkedinIn, FaGithub, FaMedium } from "react-icons/fa";
 
 const Home = props => {

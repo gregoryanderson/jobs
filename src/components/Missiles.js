@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Missile from "./Missile";
-// import "./Game.css";
+import "./Game.css";
 
 const Missiles = props => {
 

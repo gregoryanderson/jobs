@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-// import "./Main.css";
-// import "./Projects.css";
+import "./Main.css";
+import "./Projects.css";
 
 const Resume = () => {
   const [printer, setPrinter] = useState(false);

@@ -1,5 +1,5 @@
 import React from "react";
-// import "./Main.css";
+import "./Main.css";
 import { AiOutlineRocket } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import Home from "./Home";

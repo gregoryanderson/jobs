@@ -1,0 +1,221 @@
+.game {
+  /* transition: background-image 1.0s ease; */
+  /* background-image: url('assets/background.png'); */
+  /* background-color: #FFF; */
+  position: absolute;
+  /* height: 78vh; */
+  /* margin: 1vh 1vh 1vh 0; */
+  /* background-color: #454360; */
+  background-color: black;
+  /* align-content: center; */
+  /* 10vh 10vh 10vh; */
+  width: 58vh;
+  height: 76vh;
+  border: 1vh solid #fff;
+  /* margin-left: 15vh; */
+}
+
+div#hero {
+  width: 50px;
+  height: 50px;
+  background-image: url("assets/hero.png");
+  position: absolute;
+  left: 350px;
+  top: 500px;
+}
+
+div#missiles {
+  /* width: 1200px; */
+  /* height: 800px; */
+  /* position: absolute; */
+}
+
+div.missile1 {
+  width: 10px;
+  height: 28px;
+  background-image: url("assets/missile1.png");
+  position: absolute;
+}
+
+div#enemies {
+  /* width: 1200px; */
+  /* height: 800px; */
+  /* position: absolute; */
+}
+
+div.enemy {
+  width: 50px;
+  height: 50px;
+  background-image: url("assets/enemy.png");
+  position: absolute;
+}
+
+div.enemy-toggle {
+  display: none;
+}
+
+.text {
+  top: 0;
+  left: 0;
+}
+
+#modal {
+  width: 46vh;
+  margin-top: 20vh;
+  height: 25vh;
+  padding: 2vh;
+  display: inline-block;
+  background-color: #eb6d4a;
+  border: 1vh solid #fff;
+}
+
+#modal-2 {
+  width: 40vh;
+  margin-top: 20vh;
+  height: 15vh;
+  padding: 2vh;
+  display: inline-block;
+  background-color: #eb6d4a;
+  border: 1vh solid #fff;
+}
+
+#modal-3 {
+  margin-top: 3vh;
+  width: 40vh;
+  height: 14vh;
+  padding: 1vh;
+  display: inline-block;
+  background-color: #eb6d4a;
+  border: 1vh solid #fff;
+}
+
+#modal-4 {
+  margin-top: 3vh;
+  width: 40vh;
+  height: 20vh;
+  padding: 1vh;
+  display: inline-block;
+  background-color: #eb6d4a;
+  border: 1vh solid #fff;
+}
+
+#hall-players {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hall--player {
+  font-size: 1em;
+}
+
+.hall--score {
+  color: #eb6d4a;
+  font-size: 1em;
+}
+
+.nav__scoreboard {
+  height: 78vh;
+  background-color: #383756;
+  width: -webkit-fill-available;
+  text-align: center;
+  margin-left: 60vh;
+}
+
+.scoreboard {
+  height: 36vh;
+  background-color: #454360;
+  border: 1vh solid #383756;
+  width: 35vh;
+  width: -webkit-fill-available;
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.sideboard {
+  height: 78vh;
+  background-color: #454360;
+  border-left: 1vh solid #383756;
+  /* width: 35vh; */
+  margin-left: 60vh;
+}
+
+.round,
+.score {
+  font-size: 1.5em;
+  text-align: left;
+  margin-left: 1vh;
+  color: #383756;
+}
+
+.points {
+  font-size: 3.5em;
+}
+
+.sontact--buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.srojects__button {
+  color: #fff;
+  background-color: #eb6d4a;
+  transition: border 0.2s ease-out;
+  transition: padding 0.2s ease-out;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: none;
+  font-size: 0.7em;
+  width: 20vh;
+  margin: 0 3vh 0 3vh;
+  border: 0.5vh solid #fff;
+  cursor: pointer;
+}
+
+.srojects__button:hover {
+  font-size: 0.7em;
+  padding: 0.8em;
+  border: 0.5vh solid #fff;
+  cursor: pointer;
+}
+
+.game--image {
+  width: 20vh;
+  margin-top: 8vh;
+}
+
+.ready {
+  margin: 1vh 0 1vh 0;
+}
+
+#hall {
+  width: 33vh;
+  display: inline-block;
+}
+
+#hall--section {
+  background-color: #383756;
+  height: 32vh;
+  overflow: scroll;
+  padding: 1vh;
+}
+
+#hall--title {
+  font-size: 1.5em;
+  padding: 1vh 0vh 1vh 0vh;
+  color: #eb6d4a;
+  background-color: #383756;
+}
+
+#sideboard--img {
+  height: 36vh;
+  background-color: #454360;
+  align-items: center;
+}
+
+#input {
+  box-shadow: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-bottom: 1vh;
+  padding: 1vh;
+}

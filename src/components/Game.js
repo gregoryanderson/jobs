@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-// import "./Game.css";
-// import "./Main.css";
+import "./Game.css";
+import "./Main.css";
 import Hero from "./Hero";
 import Missiles from "./Missiles";
 import Enemies from "./Enemies";
@@ -9,7 +9,7 @@ import HallOfFame from "./HallOfFame";
 
 import setEnemyState from "./setEnemyState";
 // import "./Projects.css";
-// import "./Contact.css";
+import "./Contact.css";
 import { postPlayer, getPlayers, getScores, postScore } from "./apiCalls";
 
 class Game extends Component {
