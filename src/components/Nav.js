@@ -90,7 +90,7 @@ const Nav = props => {
     } else if (props.route === "contact") {
       return <AiOutlineSound size={300} color="#454360" />;
     } else if (props.route === "content") {
-      return <AiOutlineSound size={300} color="#454360" />;
+      return <AiOutlineVideoCamera size={300} color="#454360" />;
     } else if (props.route === "experience") {
       return <AiOutlineLineChart size={300} color="#454360" />;
     } else if (props.route === "resume") {
