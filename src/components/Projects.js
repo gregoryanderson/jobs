@@ -152,7 +152,7 @@ const Projects = (props) => {
             </p>
             <section className="project-links-section">
               <a
-                href="https://github.com/gregoryanderson/Agency-fe"
+                href="https://github.com/gregoryanderson/Agency"
                 className="project-links"
               >
                 Github
@@ -254,7 +254,7 @@ const Projects = (props) => {
             <p className="job-p">A web chat built in Ruby/Rails that accesses web sockets for immediate messaging on the screen. The front-end utilizes Semantic-UI for a stylish, complete look. A solo project. Use the name, "guest", and the password, "password", for access!</p>
             <section className="project-links-section">
               <a
-                href="https://github.com/gregoryanderson/instant-message"
+                href="https://github.com/gregoryanderson/message-me"
                 className="project-links"
               >
                 Github
@@ -282,7 +282,7 @@ const Projects = (props) => {
             </p>
             <section className="project-links-section">
               <a
-                href="https://github.com/gregoryanderson/frontend-palette-picker"
+                href="https://github.com/gregoryanderson/palette-picker"
                 className="project-links"
               >
                 Github
