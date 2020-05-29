@@ -14,15 +14,15 @@ const Resume = () => {
   };
 
   const determinePDF = () => {
-    if (printer) {
-      return (
-        <iframe
-          src={require("./PrinterResume.pdf")}
-          width="560"
-          height="315"
-        ></iframe>
-      );
-    } else {
+    // if (printer) {
+    //   return (
+    //     <iframe
+    //       src={require("./PrinterResume.pdf")}
+    //       width="560"
+    //       height="315"
+    //     ></iframe>
+    //   );
+    // } else {
       return (
         <iframe
           src={require("./ResumeForGregoryAnderson.pdf")}
@@ -30,7 +30,7 @@ const Resume = () => {
           height="315"
         ></iframe>
       );
-    }
+    // }
   };
 
   const determineButton = () => {

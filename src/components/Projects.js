@@ -3,6 +3,7 @@ import "./Projects.css";
 
 const Projects = (props) => {
   const [agency, setAgency] = useState(false);
+  const [style, setStyle] = useState(false);
   const [heart, setHeart] = useState(false);
   const [palette, setPalette] = useState(false);
   const [finance, setFinance] = useState(false);
@@ -32,6 +33,7 @@ const Projects = (props) => {
       setFinance(false);
       setChat(false);
       setUni(false);
+      setStyle(false);
     } else if (name === "heart") {
       setAgency(false);
       setHeart(true);
@@ -39,6 +41,7 @@ const Projects = (props) => {
       setFinance(false);
       setChat(false);
       setUni(false);
+      setStyle(false);
     } else if (name === "palette") {
       setAgency(false);
       setHeart(false);
@@ -46,6 +49,7 @@ const Projects = (props) => {
       setFinance(false);
       setChat(false);
       setUni(false);
+      setStyle(false);
     } else if (name === "finance") {
       setAgency(false);
       setHeart(false);
@@ -53,6 +57,7 @@ const Projects = (props) => {
       setFinance(true);
       setChat(false);
       setUni(false);
+      setStyle(false);
     } else if (name === "chat") {
       setAgency(false);
       setHeart(false);
@@ -60,6 +65,7 @@ const Projects = (props) => {
       setFinance(false);
       setChat(true);
       setUni(false);
+      setStyle(false);
     } else if (name === "uni") {
       setAgency(false);
       setHeart(false);
@@ -67,6 +73,15 @@ const Projects = (props) => {
       setFinance(false);
       setChat(false);
       setUni(true);
+      setStyle(false);
+    } else if (name === "style") {
+      setAgency(false);
+      setHeart(false);
+      setPalette(false);
+      setFinance(false);
+      setChat(false);
+      setUni(false);
+      setStyle(true);
     }
   };
 
@@ -129,6 +144,14 @@ const Projects = (props) => {
               onClick={() => handleClickTwo("heart")}
             >
               Heart
+            </button>
+          </section>
+          <section className="projects--btns">
+            <button
+              className={style ? "projects__button--true" : "projects__button"}
+              onClick={() => handleClickTwo("style")}
+            >
+              Style-Guide
             </button>
           </section>
         </section>
@@ -201,7 +224,11 @@ const Projects = (props) => {
           <section className="projects--story">
             <h1 className="job-title">Tech University</h1>
             <p className="job-p">
-              An Rails application that lists courses and gives a short synopsis of each course. Students may enroll for courses and see what courses other students have signed up for. Utilizing Material-UI for views. A solo project. Username, 'guest@example.com', and password, 'password'.
+              An Rails application that lists courses and gives a short synopsis
+              of each course. Students may enroll for courses and see what
+              courses other students have signed up for. Utilizing Material-UI
+              for views. A solo project. Username, 'guest@example.com', and
+              password, 'password'.
             </p>
             <section className="project-links-section">
               <a
@@ -227,7 +254,8 @@ const Projects = (props) => {
             <h1 className="job-title">Finance Tracker</h1>
             <p className="job-p">
               A Rails app built that tracks personal stocks, as well as keeps
-              you updated on your friends stocks. Utilizing bootstrap for the front end views. A solo project. 
+              you updated on your friends stocks. Utilizing bootstrap for the
+              front end views. A solo project.
             </p>
             <section className="project-links-section">
               <a
@@ -251,7 +279,12 @@ const Projects = (props) => {
         <>
           <section className="projects--story">
             <h1 className="job-title">Message Me</h1>
-            <p className="job-p">A web chat built in Ruby/Rails that accesses web sockets for immediate messaging on the screen. The front-end utilizes Semantic-UI for a stylish, complete look. A solo project. Use the name, "guest", and the password, "password", for access!</p>
+            <p className="job-p">
+              A web chat built in Ruby/Rails that accesses web sockets for
+              immediate messaging on the screen. The front-end utilizes
+              Semantic-UI for a stylish, complete look. A solo project. Use the
+              name, "guest", and the password, "password", for access!
+            </p>
             <section className="project-links-section">
               <a
                 href="https://github.com/gregoryanderson/message-me"
@@ -289,6 +322,31 @@ const Projects = (props) => {
               </a>
               <a
                 href="https://fe-palette.herokuapp.com/"
+                className="project-links"
+              >
+                Live Site
+              </a>
+            </section>
+          </section>
+        </>
+      );
+    } else if (style) {
+      return (
+        <>
+          <section className="projects--story">
+            <h1 className="job-title">Style Guide</h1>
+            <p className="job-p">
+              No JavaScript here actually. An exercise entirely in HTML and CSS in order to to exhibit skill in animation and design work. Deployed on S3. A solo project and regularly updated.
+            </p>
+            <section className="project-links-section">
+              <a
+                href="https://github.com/gregoryanderson/style-guide"
+                className="project-links"
+              >
+                Github
+              </a>
+              <a
+                href="https://master.d83t703re635h.amplifyapp.com/"
                 className="project-links"
               >
                 Live Site
