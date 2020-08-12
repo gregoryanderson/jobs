@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 const Experience = (props) => {
   const [teach, setTeach] = useState(false);
-  const [husband, setHusband] = useState(false);
   const [soldier, setSoldier] = useState(false);
   const [chief, setChief] = useState(false);
   const [dev, setDev] = useState(false);
@@ -10,37 +9,26 @@ const Experience = (props) => {
   const handleClick = (name) => {
     if (name === "teach") {
       setTeach(true);
-      setHusband(false);
       setSoldier(false);
       setChief(false);
       setDev(false);
-    } else if (name === "husband") {
+    }  else if (name === "soldier") {
       setTeach(false);
-      setHusband(true);
-      setSoldier(false);
-      setChief(false);
-      setDev(false);
-    } else if (name === "soldier") {
-      setTeach(false);
-      setHusband(false);
       setSoldier(true);
       setChief(false);
       setDev(false);
     } else if (name === "chief") {
       setTeach(false);
-      setHusband(false);
       setSoldier(false);
       setChief(true);
       setDev(false);
     } else if (name === "dev") {
       setTeach(false);
-      setHusband(false);
       setChief(false);
       setSoldier(false);
       setDev(true);
     } else {
       setTeach(false);
-      setHusband(false);
       setChief(false);
       setSoldier(false);
       setDev(false);
@@ -71,13 +59,6 @@ const Experience = (props) => {
               understanding, success was ultimately found.
             </p>
           </section>
-          {/* <section className="projects--img">
-            <img
-              src={require("./GREG-01.png")}
-              alt="Gregory Anderson"
-              className="projects--image"
-            />
-          </section> */}
         </>
       );
     } else if (soldier) {
@@ -106,28 +87,6 @@ const Experience = (props) => {
               time.{" "}
             </p>
           </section>
-          {/* <section className="projects--img">
-            <img
-              src={require("./GREG-01.png")}
-              alt="Gregory Anderson"
-              className="projects--image"
-            />
-          </section> */}
-        </>
-      );
-    } else if (husband) {
-      return (
-        <>
-          <section className="projects--story">
-            <p>husband</p>
-          </section>
-          {/* <section className="projects--img">
-            <img
-              src={require("./GREG-01.png")}
-              alt="Gregory Anderson"
-              className="projects--image"
-            />
-          </section> */}
         </>
       );
     } else if (chief) {
@@ -136,33 +95,20 @@ const Experience = (props) => {
           <section className="projects--story">
             <h1 className="job-title">Branch Chief</h1>
             <p className="job-p">
-              As a Branch Chief, I determined the life cycle of our products. I
-              entered the NSA as an Arabic Linguist and was promoted twice in 18
-              months. My daily routine went from from live Arabic translation
-              and SQL queries to leading daily standup meetings and conducting
-              performance reviews. New intelligence from across the world needed
+              As a Data Analyst, I managed the Microsoft Access database for the
+              foreign military target of our mission. I also worked with
+              developers building applications for out mission and supervised
+              operations for top secret missions.
+            </p>
+            <p className="job-p">
+              I was promoted twice in 18 months. My daily routine went from from
+              live Arabic translation and SQL queries to leading daily standup
+              meetings and conducting performance reviews, while upholding my
+              analytical duties. New intelligence from across the world needed
               to be collected, analyzed, translated, reported, briefed, and
               disseminated properly in as little as ten minutes.
             </p>
-            <p className="job-p">
-              I also recognized the importance of mentorship as a management
-              style. Our team was 25 people working on a 24/7/365 top-secret
-              mission. It was grueling with high turnover rate in order to
-              maintain fresh minds. I implemented a development program that
-              trained people to a higher standard in a shorter amount of time.
-              The focus was on incremental, achievable goals and holding people
-              accountable for meeting them. The success of the program led to my
-              third promotion. In conjunction with my role as branch chief, I
-              was named as the training manager for the 100 person division.
-            </p>
           </section>
-          {/* <section className="projects--img">
-            <img
-              src={require("./GREG-01.png")}
-              alt="Gregory Anderson"
-              className="projects--image"
-            />
-          </section> */}
         </>
       );
     } else if (dev) {
@@ -171,19 +117,23 @@ const Experience = (props) => {
           <section className="projects--story">
             <h1 className="job-title">Software Developer</h1>
             <p className="job-p">
-              I spent time at Turing School of Software and Design where I focused on JavaScript, primarily with a focus on React/Redux architecture. Within my work competencies within jQuery, HTML/CSS/SCSS, frontend testing libraries, Heroku, TravisCI, Vue, and Git were acquired. I then focused on the backend with Ruby and Rails. This has enhanced my understanding of SQL, ActiveRecord, RSpec, Postgres, Material-UI, and development on the whole.
+              I spent time at Turing School of Software and Design where I
+              focused on JavaScript, primarily with a focus on React/Redux
+              architecture. Within my work competencies within jQuery,
+              HTML/CSS/SCSS, frontend testing libraries, Heroku, TravisCI, Vue,
+              and Git were acquired. I then focused on the backend with Ruby and
+              Rails. This has enhanced my understanding of SQL, ActiveRecord,
+              RSpec, Postgres, Material-UI, and development on the whole.
             </p>
             <p className="job-p">
-              At Nanno, we were creating a new PWA, built in React, that separates from an already existing Rails monolith. I built new features on the app, handling frontend and backend tickets along the way. We worked within an Agile Workflow and my velocity improved rapidly. We used Jira to handle tickets and Github for our repos. 
+              At Nanno, we were creating a new PWA, built in React, that
+              separates from an already existing Rails monolith. I built new
+              features on the app, handling frontend and backend tickets along
+              the way. We worked within an Agile Workflow and my velocity
+              improved rapidly. We used Jira to handle tickets and Github for
+              our repos.
             </p>
           </section>
-          {/* <section className="projects--img">
-            <img
-              src={require("./GREG-01.png")}
-              alt="Gregory Anderson"
-              className="projects--image"
-            />
-          </section> */}
         </>
       );
     } else {
@@ -210,14 +160,6 @@ const Experience = (props) => {
             Preschool Teacher
           </button>
         </section>
-        {/* <section className="projects--btns">
-          <button
-            className={husband ? "projects__button--true" : "projects__button"}
-            onClick={() => handleClick("husband")}
-          >
-            Husband
-          </button>
-        </section> */}
         <section className="projects--btns">
           <button
             className={soldier ? "projects__button--true" : "projects__button"}
@@ -231,9 +173,17 @@ const Experience = (props) => {
             className={chief ? "projects__button--true" : "projects__button"}
             onClick={() => handleClick("chief")}
           >
-            Branch Chief
+            Data Analyst
           </button>
         </section>
+      </section>
+      <section className="projects--btns">
+        <button
+          className={dev ? "projects__button--true" : "projects__button"}
+          onClick={() => handleClick("dev")}
+        >
+          Software Developer
+        </button>
       </section>
       <section className="contact--text">{determineText()}</section>
     </section>

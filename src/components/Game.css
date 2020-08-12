@@ -1,18 +1,9 @@
 .game {
-  /* transition: background-image 1.0s ease; */
-  /* background-image: url('assets/background.png'); */
-  /* background-color: #FFF; */
   position: absolute;
-  /* height: 78vh; */
-  /* margin: 1vh 1vh 1vh 0; */
-  /* background-color: #454360; */
   background-color: black;
-  /* align-content: center; */
-  /* 10vh 10vh 10vh; */
   width: 58vh;
   height: 76vh;
   border: 1vh solid #fff;
-  /* margin-left: 15vh; */
 }
 
 div#hero {
@@ -24,11 +15,6 @@ div#hero {
   top: 500px;
 }
 
-div#missiles {
-  /* width: 1200px; */
-  /* height: 800px; */
-  /* position: absolute; */
-}
 
 div.missile1 {
   width: 10px;
@@ -37,11 +23,6 @@ div.missile1 {
   position: absolute;
 }
 
-div#enemies {
-  /* width: 1200px; */
-  /* height: 800px; */
-  /* position: absolute; */
-}
 
 div.enemy {
   width: 50px;

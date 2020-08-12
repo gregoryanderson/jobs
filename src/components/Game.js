@@ -6,9 +6,7 @@ import Hero from "./Hero";
 import Missiles from "./Missiles";
 import Enemies from "./Enemies";
 import HallOfFame from "./HallOfFame";
-
 import setEnemyState from "./setEnemyState";
-// import "./Projects.css";
 import "./Contact.css";
 import { postPlayer, getPlayers, getScores, postScore } from "./apiCalls";
 
@@ -104,7 +102,6 @@ class Game extends Component {
     console.log(lowestQualifier);
     console.log(this.state.score);
     if (this.state.score > lowestQualifier) {
-      // console.log("lalala");
       this.setState({ highScore: true });
     }
   };

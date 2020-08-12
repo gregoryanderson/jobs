@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Main.css";
 
 const Content = () => {
@@ -15,7 +15,7 @@ const Content = () => {
         ></iframe>
       </section>
       <section className="video--text">
-        <p className="video--location">1909 Turing Top Talks</p>
+        <p className="video--location">Turing Top Talks</p>
         <p>Bites, Bytes, and A Whole Lot of Cable</p>
         <a
           href="https://docs.google.com/presentation/d/1FPD8QEf-DjkdM8q5Dub0oFA5djKihYR0g22-a8FROHs/edit?usp=sharing"
