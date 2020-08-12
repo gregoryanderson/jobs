@@ -1,38 +1,49 @@
 import React, { useState } from "react";
-// import "./Main.css";
 
-const Experience = props => {
+const Experience = (props) => {
   const [teach, setTeach] = useState(false);
   const [husband, setHusband] = useState(false);
   const [soldier, setSoldier] = useState(false);
   const [chief, setChief] = useState(false);
+  const [dev, setDev] = useState(false);
 
-  const handleClick = name => {
+  const handleClick = (name) => {
     if (name === "teach") {
       setTeach(true);
       setHusband(false);
       setSoldier(false);
       setChief(false);
+      setDev(false);
     } else if (name === "husband") {
       setTeach(false);
       setHusband(true);
       setSoldier(false);
       setChief(false);
+      setDev(false);
     } else if (name === "soldier") {
       setTeach(false);
       setHusband(false);
       setSoldier(true);
       setChief(false);
+      setDev(false);
     } else if (name === "chief") {
       setTeach(false);
       setHusband(false);
       setSoldier(false);
       setChief(true);
+      setDev(false);
+    } else if (name === "dev") {
+      setTeach(false);
+      setHusband(false);
+      setChief(false);
+      setSoldier(false);
+      setDev(true);
     } else {
       setTeach(false);
       setHusband(false);
       setChief(false);
       setSoldier(false);
+      setDev(false);
     }
   };
 
@@ -143,6 +154,27 @@ const Experience = props => {
               accountable for meeting them. The success of the program led to my
               third promotion. In conjunction with my role as branch chief, I
               was named as the training manager for the 100 person division.
+            </p>
+          </section>
+          {/* <section className="projects--img">
+            <img
+              src={require("./GREG-01.png")}
+              alt="Gregory Anderson"
+              className="projects--image"
+            />
+          </section> */}
+        </>
+      );
+    } else if (dev) {
+      return (
+        <>
+          <section className="projects--story">
+            <h1 className="job-title">Software Developer</h1>
+            <p className="job-p">
+              I spent time at Turing School of Software and Design where I focused on JavaScript, primarily with a focus on React/Redux architecture. Within my work competencies within jQuery, HTML/CSS/SCSS, frontend testing libraries, Heroku, TravisCI, Vue, and Git were acquired. I then focused on the backend with Ruby and Rails. This has enhanced my understanding of SQL, ActiveRecord, RSpec, Postgres, Material-UI, and development on the whole.
+            </p>
+            <p className="job-p">
+              At Nanno, we were creating a new PWA, built in React, that separates from an already existing Rails monolith. I built new features on the app, handling frontend and backend tickets along the way. We worked within an Agile Workflow and my velocity improved rapidly. We used Jira to handle tickets and Github for our repos. 
             </p>
           </section>
           {/* <section className="projects--img">
