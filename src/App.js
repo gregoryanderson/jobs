@@ -73,7 +73,7 @@ class App extends Component {
             render={() => (
               <>
                 <Nav route="home" />
-                <Main route="home" />
+                <Main route="home" class="PicoRule"/>
               </>
             )}
           />
