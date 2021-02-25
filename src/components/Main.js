@@ -21,7 +21,6 @@ const Main = (props) => {
                 <AiOutlineRocket size={64} color="#EB6D4A" />
               </Link>
             </section>
-            <button class="PicoRule">Click</button>
             <Home />
           </div>
         </>
