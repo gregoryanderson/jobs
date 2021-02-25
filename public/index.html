@@ -10,6 +10,40 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="logo192.png" />
+    <script>
+      (function (p, i, c, o) {
+        var n = new Event("pico-init");
+        (i[p] =
+          i[p] ||
+          function () {
+            (i[p].queue = i[p].queue || []).push(arguments);
+          }),
+          i.document.addEventListener(
+            "pico-init",
+            function (e) {
+              var t = i.Pico.getInstance(e, { publisherId: o, picoInit: n }, i);
+              t.handleQueueItems(i[p].queue),
+                (i[p] = function () {
+                  return t.handleQueueItems([arguments]);
+                });
+            },
+            !1
+          );
+        var e = i.document.createElement("script"),
+          t = i.document.getElementsByTagName("script")[0];
+        (e.async = 1),
+          (e.src = c),
+          (e.onload = function (e) {
+            return i.Pico.getInstance(e, { publisherId: o, picoInit: n }, i);
+          }),
+          t.parentNode.insertBefore(e, t);
+      })(
+        "pico",
+        window,
+        "https://gadget.pico.tools/wrapper.min.js",
+        "INSERT YOUR PUBLISHER ID"
+      );
+    </script>
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -39,5 +73,21 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      var pageInfo = {
+        article: true,
+        post_id: "string1234",
+        post_type: "article",
+        // resource_ref: unique_reference_string, // optional
+        taxonomies: {
+          tags: ["puppies", "kittens"],
+          categories: ["pets"],
+          some_custom_taxonomy: ["cute things"],
+        },
+        url: window.location.href,
+      };
+
+      window.pico("visit", pageInfo);
+    </script>
   </body>
 </html>

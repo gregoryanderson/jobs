@@ -10,19 +10,20 @@ import Projects from "./Projects";
 import Game from "./Game";
 import Resume from "./Resume";
 
-
-const Main = props => {
+const Main = (props) => {
   const determineTheRoute = () => {
     if (props.route === "home" || props.route === "") {
       return (
         <>
-          <section className="main--rocket">
-            <Link to="/game">
-              <AiOutlineRocket size={64} color="#EB6D4A" />
-            </Link>
-          </section>
-          <button class="PicoRule">Click</button>
-          <Home />
+          <div id="pico">
+            <section className="main--rocket">
+              <Link to="/game">
+                <AiOutlineRocket size={64} color="#EB6D4A" />
+              </Link>
+            </section>
+            <button class="PicoRule">Click</button>
+            <Home />
+          </div>
         </>
       );
     }
@@ -90,7 +91,12 @@ const Main = props => {
       return (
         <>
           <section className="main--sontent">
-            <Game route="game" displayScore={props.displayScore} displayRound={props.displayRound} hof={props.hof}/>
+            <Game
+              route="game"
+              displayScore={props.displayScore}
+              displayRound={props.displayRound}
+              hof={props.hof}
+            />
           </section>
         </>
       );
