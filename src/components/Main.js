@@ -31,7 +31,7 @@ const Main = (props) => {
         <>
           <section className="main--rocket">
             <Link to="/game">
-              <AiOutlineRocket size={64} color="#EB6D4A" />
+              <AiOutlineRocket size={65} color="#EB6D4A" />
             </Link>
           </section>
           <Experience />
